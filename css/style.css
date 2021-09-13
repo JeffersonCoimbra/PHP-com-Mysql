@@ -1,13 +1,38 @@
-﻿
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+
 body{
-    background-color: #AAAAAA;
-    margin: 0;
+    background-color: #OOOOOO;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.escrita-mao{
+    font-family: 'Allison', cursive;
+    text-shadow: #000 2px 2px;
+}
+
+/*Esse é um comentário CSS*/
+h1{
+    
+    font-family: 'Roboto Slab', serif;
+    font-size: 52px;
+    color:#FFFFFF;
+    padding-top: 10%;
+    text-shadow:  2px 2px;
+    text-align: center;
+   
+
 }
 
 header{
     display: block;
-    height: 400px;
+    height: 200px;
     text-align: center;
     background-color:#000000;
     background-position: center;
@@ -17,29 +42,19 @@ header{
 }
 
 
-
-h1{
-    
-    font-family: 'Roboto Slab', serif;
-    font-size: 24px;
-    color:#FFFFFF;
-    padding-top: 10%;
-    text-shadow: #696969 2px;
-
-}
-
-menu-principal{
+.menu-principal{
     width: 100%;
-    background-color: #696969;
-    height: 20px;
+    background-color:#696969;
+    height: 50px;
 
 }
 
-#inicio{
+#index{
     display:block;
     height: 800px;
     background-image:url(../img/Fundo.jpg);
     background-repeat:no-repeat;
+    background-color:white;
     
     
     
@@ -84,7 +99,7 @@ menu-principal{
     background-attachment: fixed
 }
 
-#Outros{
+#Cadastro{
     display:block;
     height: 800px;
     background-image: url(../img/Fundo.jpg);
@@ -97,7 +112,7 @@ h2{
     font-size: 18px;
     font-weight: bold;
    background-color: rgb(111, 0, 255);
-   text-align:center;
+   text-align:left;
 }
 
 h6{
@@ -109,19 +124,31 @@ h6{
 }
 
 
+
+Código substituido pelo Bootstrap
 nav ul{
-    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #613800;
+    position: sticky;
+    top: 0;
 }
 
+
 nav ul li{
-    display: block;
-    padding: 10px;
+    display: inline-block;
+    padding: 2px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav ul li a{
     display: block;
-    background-color: #0e0d0d;
-    padding: 10px;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
     text-decoration: none;
 }
 
@@ -130,13 +157,14 @@ nav ul li a:link, a:visited{
 }
 
 nav ul li a:hover{
-    color: #000000;
-    background-color: #ffffff;
+    color: #FFFFFF;
+    background-color: #EDB469;
 }
 
 footer{
+    text-align: center;
+    padding-top: 100px;
     height: 200px;
-    background-color:white;
-    color:#FFFFFF;
-}   
-    
+    background-color:#000000;
+    color: #FFFFFF;
+}
